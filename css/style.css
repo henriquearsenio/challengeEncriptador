@@ -1,4 +1,4 @@
-::placeholder { /* Most modern browsers support this now. */
+::placeholder{
     color:   #0A3871;
 }
  
@@ -168,4 +168,16 @@ main{
 
 .esconder{
     display: none;
+}
+
+.esconder-animado{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sucesso{
+    font-size: 10px;
+    text-align: center;
+    color: #6a6d70;
+    transition: opacity .5s linear;
 }
