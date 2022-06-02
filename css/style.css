@@ -12,8 +12,8 @@
 
 header{
     font-family: Inter, sans-serif;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -53,6 +53,7 @@ main{
 
 .saida{
     display: flex;
+    padding-top: 30px;
     flex-direction: column;
     margin-left: 100px;
     width: 20%;
@@ -64,12 +65,12 @@ main{
 }
 
 .banner{
-    margin: 100px 0 20px 0;
+    margin: 70px 0 20px 0;
     text-align: center;
 }
 
 #imagem-banner{
-    width: 80%;
+    width: 70%;
     align-self: center;  
 }
 
@@ -84,7 +85,7 @@ main{
 
 .texto-saida{
     width: calc(100% - 80px);
-    margin: 20px 40px;
+    margin: 0 40px 20px;
     height: calc(100% - 40px);
 }
 
@@ -177,7 +178,24 @@ main{
 
 #sucesso{
     font-size: 10px;
+    margin-bottom: 5px;
     text-align: center;
     color: #6a6d70;
     transition: opacity .5s linear;
+}
+
+footer{
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 20px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
