@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8602520762.js" crossorigin="anonymous"></script>
+        <title>Encriptador de Texto</title>
+    </head>
+    <body>
+        <header>
+                <img src="/imagens/logo.png" alt="logo arsenio" class="logo"><h1>- Encriptador de Texto</h1>
+        </header>
+
+        <main>
+            <!-- Primeira seção (esquerda) -->
+            <section class="entrada">
+                <div class="texto-entrada">
+                    <textarea id="texto-entrada" placeholder="Digite aqui o texto para criptografar / descriptografar"></textarea>
+                </div>
+
+                <div class="botoes">
+                    <i class="fa-solid fa-circle-exclamation exclamacao"></i>
+                    <p class="aviso">Apenas letras minúsculas e sem acento.</p>
+                    <button class="botao-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                    <button class="botao-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+                </div>
+            </section>
+
+            <!-- Segunda seção (direita) -->
+            <section class="saida">
+                <div class="banner">
+                    <img id="imagem-banner"src="/imagens/boneco.png" alt="boneco olhando um diamante através de uma lupa">
+                </div>
+
+                <div class="informacao">
+                    <p>Nenhuma mensagem encontrada</p>
+                </div>
+
+                <div class="texto-saida">
+                    <textarea id="texto-saida" placeholder="Digite ao lado seu texto" readonly></textarea>
+                </div>
+
+                <div class="copiar">
+                    <button id="botao-copiar" class="esconder" onclick="copiar()">Copiar</button>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+        
+        <script src="script.js"></script>
+        <script src="copiar.js"></script>
+    </body>
+</html>
