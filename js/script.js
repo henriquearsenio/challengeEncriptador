@@ -3,6 +3,7 @@ let saidaTexto = document.querySelector("#texto-saida");
 
 entradaTexto.addEventListener("input", function(){
     if(this.value.length == 0){
+        document.getElementById("texto-saida").style.height = "100%";
         document.querySelector(".banner").classList.remove('esconder');
         document.querySelector(".informacao").classList.remove('esconder');
         document.querySelector("#botao-copiar").classList.add('esconder')
@@ -20,6 +21,7 @@ function btnCriptografar(){
     if(entradaTexto.value.length == 0){
         alert("Você deve digitar um texto antes de Criptografar!");
     } else {
+        document.getElementById("texto-saida").style.height = "200px";
         saidaTexto.value = criptografar(entradaTexto.value);
         document.querySelector(".banner").classList.add('esconder');
         document.querySelector(".informacao").classList.add('esconder');
@@ -31,9 +33,11 @@ function btnDescriptografar(){
     if(entradaTexto.value.length == 0){
         alert("Você deve digitar um texto antes de Descriptografar!");
     } else {
+        document.getElementById("texto-saida").style.height = "200px";
         saidaTexto.value = descriptografar(entradaTexto.value);
         document.querySelector(".banner").classList.add('esconder');
         document.querySelector(".informacao").classList.add('esconder');
+        document.querySelector("#botao-copiar").classList.remove('esconder')
     }
 }
 
